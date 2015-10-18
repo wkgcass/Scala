@@ -1,23 +1,28 @@
 package net.cassite.pure
 
+import scala.collection.mutable.ListBuffer
+
 /**
- * Created by wkgcass on 15/10/7.
+ * Created by wkgcass on 15/10/17.
  */
 package object data {
-  implicit def toScalaData[T](input:Data[T]):ScalaData[T]=new ScalaData(input)
-  implicit def toData[T](input:ScalaData[T]):Data[T]=input.data
+  implicit def paramCompToRich[T <: Comparable[T]](p: ParameterComparable[T]): RichParameterComparable[T] = new RichParameterComparable[T](p)
 
-  implicit def toScalaExpression[T](input:Expression):ScalaExpression=new ScalaExpression(input)
-  implicit def toExpression[T](input:ScalaExpression):Expression=input.expr
+  implicit def richToParamComp[T <: Comparable[T]](r: RichParameterComparable[T]): ParameterComparable[T] = r.parameter
 
-  implicit def toScalaCondition(input:Condition):ScalaCondition=new ScalaCondition(input)
-  implicit def toCondition(input:ScalaCondition):Condition=input.condition
+  implicit def parameterToRich[T <: Parameter](p: T): RichParameter[T] = new RichParameter[T](p)
 
-  implicit def toScalaAnd(input:And):ScalaAnd=new ScalaAnd(input)
-  implicit def toAnd(input:ScalaAnd):And=input.and
+  implicit def richToParameter[T <: Parameter](r: RichParameter[T]): T = r.parameter
 
-  implicit def toScalaOr(input:Or):ScalaOr=new ScalaOr(input)
-  implicit def toOr(input:ScalaOr):Or=input.or
+  implicit def dataAssignToRich[T](a: IDataAssignable[T]): RichIDataAssignable[T] = new RichIDataAssignable[T](a)
 
-  implicit def toReverseOperator(input:Any):ReverseOperator=new ReverseOperator(input)
+  implicit def richToDataAssign[T](r: RichIDataAssignable[T]): IDataAssignable[T] = r.data
+
+  implicit def andOrTORich[T <: AndOr](ao: T): RichAndOr[T] = new RichAndOr[T](ao)
+
+  implicit def richToAndOr[T <: AndOr](r: RichAndOr[T]): T = r.o
+
+  implicit def numToReverseSup(n: Number): ReverseNumberSupporter = new ReverseNumberSupporter(n)
+
+  implicit def compToReverseSup(c: Comparable[_ <: Number]): ReverseComparableNumSupporter = new ReverseComparableNumSupporter(c)
 }
