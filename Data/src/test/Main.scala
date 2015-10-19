@@ -17,13 +17,12 @@ import scala.collection.JavaConversions._
  */
 object Main {
   def main(args: Array[String]): Unit = {
-    val entityManager = Persistence createEntityManagerFactory "mysqlJPA" createEntityManager()
 
-    val query: Query = new Query(new JPQLDataAccess(entityManager))
+    val query: Query = new Query(new JPQLDataAccess(Persistence createEntityManagerFactory "mysqlJPA"))
 
     val user = new User
     user.id := 1
-    val list = query from user where user.age > 18 list
+    val list = query from user where user.id <> 2 & user.age > 18 list
 
     list.foreach {
       u => println(u.getId)
