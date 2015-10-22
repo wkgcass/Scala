@@ -1,9 +1,7 @@
 package net.cassite.pure
 
-import scala.collection.mutable.ListBuffer
-
 /**
- * Created by wkgcass on 15/10/17.
+ * 提供必要的隐式转换和简化操作
  */
 package object data {
   implicit def paramCompToRich[T <: Comparable[T]](p: ParameterComparable[T]): RichParameterComparable[T] = new RichParameterComparable[T](p)
@@ -25,4 +23,10 @@ package object data {
   implicit def numToReverseSup(n: Number): ReverseNumberSupporter = new ReverseNumberSupporter(n)
 
   implicit def compToReverseSup(c: Comparable[_ <: Number]): ReverseComparableNumSupporter = new ReverseComparableNumSupporter(c)
+
+  def top(i: Int) = new QueryParameter().top(i)
+
+  def limit(start: Int, end: Int) = new QueryParameter().limit(start, end)
+
+  def orderBy(base: OrderBase*) = new QueryParameter().orderBy(base: _*)
 }

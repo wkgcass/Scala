@@ -1,9 +1,5 @@
 package test
 
-import java.util
-import javax.persistence
-import javax.persistence.criteria.{CriteriaQuery, CriteriaBuilder}
-import javax.persistence.metamodel.Metamodel
 import javax.persistence._
 
 import net.cassite.pure.data._
@@ -22,7 +18,7 @@ object Main {
 
     val user = new User
     user.id := 1
-    val list = query from user where user.id <> 2 & user.age > 18 list
+    val list = query from user where user.id <> 2 & user.age > 18 param limit(1,2) list
 
     list.foreach {
       u => println(u.getId)

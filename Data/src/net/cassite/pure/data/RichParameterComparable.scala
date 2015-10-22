@@ -1,7 +1,9 @@
 package net.cassite.pure.data
 
 /**
- * Created by wkgcass on 15/10/17.
+ * 增强ParameterComparable,提供 < > >= <= + - * / % 取负运算
+ * @param parameter 包裹的参数对象
+ * @tparam T 参数的Comparable类型
  */
 class RichParameterComparable[T <: Comparable[T]](private[data] val parameter: ParameterComparable[T]) {
   def <(o: Comparable[_]) = parameter.$lt(o)

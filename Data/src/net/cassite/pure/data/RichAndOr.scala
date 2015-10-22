@@ -1,7 +1,9 @@
 package net.cassite.pure.data
 
 /**
- * Created by wkgcass on 15/10/17.
+ * AndOr增强
+ * @param o 提供 & 和 | 操作符
+ * @tparam T AndOr的实际类型
  */
 class RichAndOr[T <: AndOr](private[data] val o: T) {
   def &(that: Condition) = o.and(that)
