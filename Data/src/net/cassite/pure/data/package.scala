@@ -20,8 +20,6 @@ package object data {
 
   implicit def richToAndOr[T <: AndOr](r: RichAndOr[T]): T = r.o
 
-  implicit def numToReverseSup(n: Number): ReverseNumberSupporter = new ReverseNumberSupporter(n)
-
   implicit def compToReverseSup(c: Comparable[_ <: Number]): ReverseComparableNumSupporter = new ReverseComparableNumSupporter(c)
 
   def top(i: Int) = new QueryParameter().top(i)
@@ -29,4 +27,6 @@ package object data {
   def limit(start: Int, end: Int) = new QueryParameter().limit(start, end)
 
   def orderBy(base: OrderBase*) = new QueryParameter().orderBy(base: _*)
+
+  val all: Where = null
 }
