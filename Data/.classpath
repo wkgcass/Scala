@@ -1,25 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="/Volumes/PROJECTS/git/java/dependings/hibernate-4.2.2/antlr-2.7.7.jar"/>
-	<classpathentry kind="lib" path="/Volumes/PROJECTS/git/java/dependings/hibernate-4.2.2/dom4j-1.6.1.jar"/>
-	<classpathentry kind="lib" path="/Volumes/PROJECTS/git/java/dependings/hibernate-4.2.2/hibernate-commons-annotations-4.0.2.Final.jar"/>
-	<classpathentry kind="lib" path="/Volumes/PROJECTS/git/java/dependings/hibernate-4.2.2/hibernate-core-4.2.2.Final.jar"/>
-	<classpathentry kind="lib" path="/Volumes/PROJECTS/git/java/dependings/hibernate-4.2.2/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
-	<classpathentry kind="lib" path="/Volumes/PROJECTS/git/java/dependings/hibernate-4.2.2/javassist-3.15.0-GA.jar"/>
-	<classpathentry kind="lib" path="/Volumes/PROJECTS/git/java/dependings/hibernate-4.2.2/jboss-logging-3.1.0.GA.jar"/>
-	<classpathentry kind="lib" path="/Volumes/PROJECTS/git/java/dependings/hibernate-4.2.2/jboss-transaction-api_1.1_spec-1.0.1.Final.jar"/>
-	<classpathentry kind="lib" path="/Volumes/PROJECTS/git/java/dependings/hibernate/hibernate-entitymanager-4.1.12.Final.jar"/>
-	<classpathentry kind="lib" path="/Volumes/PROJECTS/git/java/dependings/mysql-connector-java-5.1.26-bin.jar"/>
-	<classpathentry kind="lib" path="/Users/wkgcass/Downloads/slf4j-1.7.12/slf4j-api-1.7.12.jar"/>
-	<classpathentry kind="lib" path="/Users/wkgcass/Downloads/slf4j-1.7.12/slf4j-log4j12-1.7.12.jar"/>
-	<classpathentry kind="lib" path="/Volumes/PROJECTS/git/java/common/Data/out/artifacts/pure_data_prototype_4/pure.data-prototype-4.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/pure.data-prototype-4"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/mysql-connector-java-5.1.26-bin"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/log4j-1.2.17"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/antlr-2.7.7"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/slf4j-api-1.7.12"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/scala-sdk-2.11.7"/>
-	<classpathentry kind="output" path="out/production/Data"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/test/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.scala-lang:scala-library:2.11.7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.scala-lang:scala-compiler:2.11.7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.scala-lang:scala-reflect:2.11.7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.scala-lang.modules:scala-xml_2.11:1.0.4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.scala-lang.modules:scala-parser-combinators_2.11:1.0.4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: net.cassite:daf4j:prototype-4.0-SNAPSHOT"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.specs2:specs2_2.11:2.4.6"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.scalaz.stream:scalaz-stream_2.11:0.5a"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.typelevel:scodec-bits_2.11:1.0.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.pegdown:pegdown:1.2.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.parboiled:parboiled-java:1.1.4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.parboiled:parboiled-core:1.1.4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.ow2.asm:asm:4.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.ow2.asm:asm-tree:4.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.ow2.asm:asm-analysis:4.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.ow2.asm:asm-util:4.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.scalaz:scalaz-core_2.11:7.1.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.scalaz:scalaz-concurrent_2.11:7.1.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.scalaz:scalaz-effect_2.11:7.1.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.scalacheck:scalacheck_2.11:1.11.3"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.scala-sbt:test-interface:1.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.hamcrest:hamcrest-core:1.3"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.mockito:mockito-core:1.9.5"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.objenesis:objenesis:1.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: junit:junit:4.11"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.specs2:classycle:1.4.3"/>
+	<classpathentry kind="output" path="target/classes"/>
 </classpath>
