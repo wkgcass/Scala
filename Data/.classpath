@@ -10,7 +10,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.scala-lang:scala-reflect:2.11.7"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.scala-lang.modules:scala-xml_2.11:1.0.4"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.scala-lang.modules:scala-parser-combinators_2.11:1.0.4"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: net.cassite:daf4j:prototype-4.0-SNAPSHOT"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: net.cassite:daf4j:prototype-4.1-SNAPSHOT"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.specs2:specs2_2.11:2.4.6"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.scalaz.stream:scalaz-stream_2.11:0.5a"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.typelevel:scodec-bits_2.11:1.0.2"/>

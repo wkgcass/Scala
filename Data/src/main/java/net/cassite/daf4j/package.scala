@@ -1,5 +1,7 @@
 package net.cassite
 
+import net.cassite.daf4j.util.Selectable
+
 import scala.collection.mutable.ListBuffer
 
 /**
@@ -34,6 +36,18 @@ package object daf4j {
     }
     buf.toList
   }
+
+  implicit def tuple2Focus(tuple2: (Selectable, String)): Focus = new Focus().focus(tuple2._1, tuple2._2)
+
+  implicit def tuple2RichFocus(tuple2: (Selectable, String)): RichFocus = new RichFocus(new Focus().focus(tuple2._1, tuple2._2))
+
+  implicit def dataToFocus(d: IData[_]): Focus = new Focus().focus(d)
+
+  implicit def dataToRichFocus(d: IData[_]): RichFocus = new RichFocus(new Focus().focus(d))
+
+  implicit def focusToRich(focus: Focus): RichFocus = new RichFocus(focus)
+
+  implicit def richToFocus(rich: RichFocus): Focus = rich.focus
 
   def top(i: Int) = new QueryParameter().top(i)
 

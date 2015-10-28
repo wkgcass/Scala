@@ -32,7 +32,7 @@
 		<level name="Maven: org.scala-lang:scala-reflect:2.11.7" value="project"/>
 		<level name="Maven: org.scala-lang.modules:scala-xml_2.11:1.0.4" value="project"/>
 		<level name="Maven: org.scala-lang.modules:scala-parser-combinators_2.11:1.0.4" value="project"/>
-		<level name="Maven: net.cassite:daf4j:prototype-4.0-SNAPSHOT" value="project"/>
+		<level name="Maven: net.cassite:daf4j:prototype-4.1-SNAPSHOT" value="project"/>
 		<level name="Maven: org.specs2:specs2_2.11:2.4.6" value="project"/>
 		<level name="Maven: org.scalaz.stream:scalaz-stream_2.11:0.5a" value="project"/>
 		<level name="Maven: org.typelevel:scodec-bits_2.11:1.0.2" value="project"/>
